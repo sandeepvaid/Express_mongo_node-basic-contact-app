@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            <%= title%>
+        </title>
+        <body>
+            <h1>This ejs is working and rendering fine!!</h1>
+
+            <ul>
+                <%for(let i = 0;i<6;i++){%>
+                    <li><%= i%></li>
+                <%}%>    
+            </ul>
+
+            <%if(true){%>
+                <h1>This is true</h1>
+            <%} else {%>
+                <h1>This is false</h1>
+            
+            <%}%>
+
+            <% while(j!=0){%>
+                <h1><%= j%></h1>
+                <%j-=1%>
+            
+            <%}%>
+        </body>
+    </head>
+</html>
